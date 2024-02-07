@@ -316,7 +316,6 @@ nav {display: none;}
 }
 
 /* Footer */
-
 .footer {
     background: #111;
     color: var(--clr-accent);
@@ -334,7 +333,7 @@ nav {display: none;}
     font-weight: var(--fw-bold);
 }
 
-.footer__link:hover, 
+.footer__link:hover,
 .social-list__link:hover {
     opacity: 0.8;
 }
