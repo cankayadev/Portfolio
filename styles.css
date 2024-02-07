@@ -78,6 +78,7 @@ strong {font-weight: var(--fw-bold);}
     font-weight: var(--fw-bold);
     transition: transform 0.3s ease-in-out;
     border-radius: 10px;
+    margin-top: 2em;
 }
 
 .btn:hover {
@@ -138,8 +139,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
-
+    width: 50vw;
 }
 
 .nav {
@@ -193,6 +193,18 @@ header {
     transition: transform 250ms ease-in-out;
 }
 
+.nav-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-toggle:focus {
+    outline: none;
+}
 
 .hamburger::before,
 .hamburger::after {
@@ -256,6 +268,7 @@ header {
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
+    /* opacity: 0.5; */
 }
 
 .section__title--works {
