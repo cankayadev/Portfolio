@@ -74,8 +74,6 @@ h1 strong {
     display: block;
 }
 
-.section__title {}
-
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
