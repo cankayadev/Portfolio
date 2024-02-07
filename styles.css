@@ -7,8 +7,10 @@
 /* Custom Properties, play around with them */
 
 :root {
-    --ff-primary: 'Source Sans 3', sans-serif;
-    --ff-secondary: 'Roboto', sans-serif;
+    --ff-primary: 'Roboto',
+        sans-serif;
+    --ff-secondary:'Source Code Pro',
+        sans-serif;
 
     --fw-reg: 300;
     --fw-bold: 900;
@@ -42,6 +44,12 @@ body {
     font-size: var(--fs-body);
     line-height: 1.7;
 }
+
+section {
+    padding: 5em 1.8em;
+}
+
+strong {font-weight: var(--fw-bold);}
 
 img {
     display: block;
@@ -83,4 +91,34 @@ h1 strong {
 .section__subtitle--about {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
+/* Header */
+
+nav {display: none;}
+
+
+/* Intro section */
+
+.intro {
+    position: relative
+}
+
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro__img {
+        grid-area: img;
+        min-width: 250px;
+    }
 }
