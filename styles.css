@@ -233,7 +233,7 @@ nav {display: none;}
     .vision {
         display: grid;
         grid-template-columns: 1fr 200px;
-        grid-template-areas: 
+        grid-template-areas:  asdflkas
             "title img"
             "subtitle img"
             "text img";
