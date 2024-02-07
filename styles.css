@@ -309,23 +309,52 @@ nav {display: none;}
 
 /* media queries for the grid to make it adapt to screen size */
 
-@media (min-width: 600px) and (max-width: 799px) {
-    .portfolios {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 @media (max-width: 599px) {
     .portfolios {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 299px) {
-    .portfolios {
-        grid-template-columns: repeat(1, 1fr);
-    }
+/* Footer */
+
+.footer {
+    background: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2em 0;
+    font-size: var(--fs-h3);
 }
 
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
 
-/* Footer */
+.footer__link {
+    font-weight: var(--fw-bold);
+}
+
+.footer__link:hover, 
+.social-list__link:hover {
+    opacity: 0.8;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 1em;
+}
+
+.social-list__link {
+    padding: .5em;
+}
