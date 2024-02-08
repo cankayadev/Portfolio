@@ -229,7 +229,7 @@ header {
     margin-left: auto;
     border: 0;
     cursor: pointer;
-    /* position: absolute; */
+    /* position: fixed; */
     right: 1em;
     top: 1em;
     z-index: 1000;
@@ -298,11 +298,26 @@ header {
     background-color: var(--clr-dark);
     background-image: url(./images/pexels-lukas-574069.jpg);
     background-size: cover; 
-    /* background-blend-mode: multiply; */
+    background-blend-mode: normal;
     color: var(--clr-light);
     text-align: center;
-    /* opacity: 0.5; */
+    position: relative;
 }
+
+/* .my-works * {
+    z-index: 99;
+}
+
+.my-works::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-dark);
+    opacity: 0.5;
+} */
 
 .section__title--works {
     color: var(--clr-accent);
@@ -317,9 +332,9 @@ header {
     margin: 1em auto 1.25em; 
     background: var(--clr-light);
     opacity: 0.5;
-}cl
+}
 
-.work {
+.works {
     max-width: 500px;
     margin: 0 auto;
 }
