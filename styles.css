@@ -136,6 +136,8 @@ h1 strong {
 
 /* Header */
 
+/* fixes needed: bei screen sizes um 500px width wird das logo kleiner und der hamburger richtet sich nicht daran aus */
+
 header {
     display: flex;
     align-items: center;
