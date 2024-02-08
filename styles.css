@@ -44,6 +44,10 @@
 
 /* General styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -178,6 +182,27 @@ header {
     color: var(--clr-accent);
 }
 
+.nav-open .nav{
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle{
+    position: fixed;
+}
+
+.nav-open .hamburger{
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before{
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after{
+    display: none;
+}
+
+
 .hamburger {
     display: block;
     position: relative;
@@ -186,7 +211,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -194,12 +219,25 @@ header {
 }
 
 .nav-toggle {
-    background: none;
-    border: none;
-    padding: 0;
-    display: inline-flex;
+
+    /* das hier noch ändern: in mobile und on-desktop muss nav-toggle auf level von logo sein */
+    padding: .25em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+    /* display: inline-flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 1em;
+    top: 1em;*/ 
+    
+    /* color: #f26419;
+    z-index: 1000; */
 }
 
 .nav-toggle:focus {
@@ -440,4 +478,12 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+
+/* portfolio-item-individual */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
 }
