@@ -149,6 +149,13 @@ header {
     max-width: 30vw;
 }
 
+@media (max-width: 599px) {
+    .logo {
+        min-height: 3rem;
+        max-width: 50vw;
+    }
+}
+
 .nav {
     position: fixed;
     background-color: var(--clr-dark);
@@ -189,10 +196,6 @@ header {
     transform: translateX(0);
 }
 
-.nav-open .nav-toggle{
-    position: fixed;
-}
-
 .nav-open .hamburger{
     transform: rotate(.625turn);
 }
@@ -204,7 +207,6 @@ header {
 .nav-open .hamburger::after{
     display: none;
 }
-
 
 .hamburger {
     display: block;
