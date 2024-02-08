@@ -138,12 +138,15 @@ h1 strong {
 
 header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 1em;  
+    padding: .5em 1em;  
+    margin: 0;
 }
 
 .logo {
-    width: 50vw;
+    flex: 1;
+    max-width: 30vw;
 }
 
 .nav {
@@ -223,21 +226,13 @@ header {
     /* das hier noch ändern: in mobile und on-desktop muss nav-toggle auf level von logo sein */
     padding: .25em;
     background: transparent;
+    margin-left: auto;
     border: 0;
     cursor: pointer;
-    position: absolute;
+    /* position: absolute; */
     right: 1em;
     top: 1em;
     z-index: 1000;
-    /* display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 1em;
-    top: 1em;*/ 
-    
-    /* color: #f26419;
-    z-index: 1000; */
 }
 
 .nav-toggle:focus {
